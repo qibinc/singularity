@@ -1,0 +1,30 @@
+Bootstrap: shub
+
+From: singularityhub/ubuntu
+
+
+%runscript
+
+    exec echo "The runscript is the containers default runtime command!"
+
+
+%files
+
+
+%environment
+
+    VARIABLE=MEATBALLVALUE
+
+    export VARIABLE
+
+
+%labels
+
+   AUTHOR chenqibin422@gmail.com
+
+
+%post
+
+    apt-get update && apt-get -y install zsh
+
+    echo "The post section is where you can install, and configure your container."
