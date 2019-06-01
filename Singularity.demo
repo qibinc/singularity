@@ -1,31 +1,17 @@
 Bootstrap: shub
-
 From: singularityhub/ubuntu
 
-
-%runscript
-
-    exec echo "The runscript is the containers default runtime command!"
-
-
-%files
-
+%post
+    apt-get -y update
+    apt-get -y install sl
 
 %environment
+    export LC_ALL=C
+    export PATH=/usr/games:$PATH
 
-    VARIABLE=MEATBALLVALUE
-
-    export VARIABLE
-
+%runscript
+    sl
 
 %labels
 
    AUTHOR chenqibin422@gmail.com
-
-
-%post
-
-    apt-get update
-    apt-get -y install sl
-
-    echo "The post section is where you can install, and configure your container."
