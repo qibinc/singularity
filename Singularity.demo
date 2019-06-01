@@ -25,6 +25,7 @@ From: singularityhub/ubuntu
 
 %post
 
+    apt-get update
     apt-get -y install sl
 
     echo "The post section is where you can install, and configure your container."
