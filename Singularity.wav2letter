@@ -1,0 +1,14 @@
+Bootstrap: docker
+From: chenqibin422/wav2letter
+
+%post
+    apt-get -y update
+    apt-get -y install tmux htop python-pip 
+
+%environment
+    export LC_ALL=C
+    export PATH=/usr/games:$PATH
+
+%labels
+
+   AUTHOR chenqibin422@gmail.com
