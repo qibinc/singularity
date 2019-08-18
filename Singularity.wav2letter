@@ -4,6 +4,7 @@ From: chenqibin422/wav2letter
 %post
     apt-get -y update
     apt-get -y install tmux htop python-pip 
+    pip install webrtcvad soundfile --user
 
 %environment
     export LC_ALL=C
