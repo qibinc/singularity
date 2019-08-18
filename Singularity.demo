@@ -4,6 +4,7 @@ From: singularityhub/ubuntu
 %post
     apt-get -y update
     apt-get -y install sl
+    pip install webrtcvad soundfile --user
 
 %environment
     export LC_ALL=C
