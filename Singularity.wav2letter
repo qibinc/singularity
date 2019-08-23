@@ -4,7 +4,7 @@ From: chenqibin422/wav2letter
 %post
     apt-get -y update
     apt-get -y install tmux htop python-pip ffmpeg
-    pip install webrtcvad soundfile --user
+    pip install webrtcvad soundfile numpy --user
     wget https://deepspeech.bj.bcebos.com/zh_lm/zh_giga.no_cna_cmn.prune01244.klm
 
 %environment
