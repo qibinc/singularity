@@ -4,7 +4,7 @@ From: chenqibin422/wav2letter
 %post
     apt-get -y update
     apt-get -y install tmux htop python-pip ffmpeg
-    pip install webrtcvad soundfile numpy --user
+    pip3 install webrtcvad soundfile numpy --user
 
 %environment
     export LC_ALL=C
