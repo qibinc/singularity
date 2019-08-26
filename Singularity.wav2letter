@@ -3,7 +3,7 @@ From: chenqibin422/wav2letter
 
 %post
     apt-get -y update
-    apt-get -y install tmux htop python-pip ffmpeg
+    apt-get -y install tmux htop python-pip ffmpeg zip unzip
 
 %environment
     export LC_ALL=C
